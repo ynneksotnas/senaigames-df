@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sou Membro</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form action="#" method="POST">
+        <h2><span>CANDANGO</span> Neural</h2>
+        <h1>Ascentiony</h1>
+        <div>
+            <label for="id_usuario">Email</label>
+            <input type="email" name="usuario" id="id_usuario">
+        </div>
+        <div>
+            <label for="id_senha">Senha</label>
+            <input type="password" name="senha" id="id_senha">
+        </div>
+        <div class="password-link">
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button>ENTRAR</button>
+    </form>
+</body>
+</html>
