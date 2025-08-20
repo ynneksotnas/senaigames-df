@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sou Membro</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href='{% static "membro/style.css" %}'>
 </head>
 <body>
     <form action="#" method="POST">
@@ -13,16 +13,25 @@
         <h1>Ascentiony</h1>
         <div>
             <label for="id_usuario">Email</label>
-            <input type="email" name="usuario" id="id_usuario">
+            <input type="email" name="usuario" id="id_usuario" placeholder="Digite seu email">
         </div>
         <div>
             <label for="id_senha">Senha</label>
-            <input type="password" name="senha" id="id_senha">
+            <input type="password" name="senha" id="id_senha" placeholder="Digite sua senha">
+        </div>
+        <div class="input-group">
+            <hr>
+            <label for="id_genero">ID do Gênero: {{ chave }} - Nome: {{ valor.nome }}</label>
+        <select>
+            {% for chave, valor in cards.items %}
+            <option name="genero" id="id_genero" value="{{chave}}">{{valor.nome}}</option>
+            {% endfor %}
+        </select>
         </div>
         <div class="password-link">
             <a href="#">Esqueceu a senha?</a>
         </div>
-        <button>ENTRAR</button>
+        <button type="Submit">ENTRAR</button>
     </form>
 </body>
 </html>
