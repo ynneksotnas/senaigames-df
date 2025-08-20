@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sou Membro</title>
+</head>
+<body>
+     <h6>Ùltimos membros cadastros</h6>
+     {% for membro in cards %}
+            <p>{{membro.nome}}</p>            
+     {% endfor %}
+
+
+    <form action="#" method="POST">
+       email <input type="email" name="usuario">
+       senha <input type="password" name="senha">
+       
+         <p>ID do Gênero: {{ chave }} - Nome: {{ valor.nome }}</p>
+     
+       <select>
+           {% for chave, valor in cards.items %}
+               <option value="{{chave}}">{{valor}}</option>
+           {% endfor %}          
+       </select>
+       <button> ENTRAR</button>
+    </form>    
+</body>
+</html>
