@@ -11,7 +11,7 @@ from django.db import models
 class Membro(models.Model):
     email = models.CharField(max_length=50,null=False,blank=False)
     senha = models.CharField(max_length=50,null=False,blank=False)
+    nome = models.CharField(max_length=80,null=False,blank=False)
 
-class Genero(models.Model):
-    nome = models.CharField(max_length=50,null=False,blank=False)
-    id = models.IntegerField(primary_key=True, blank=False)
+    def __self__(self):
+        return f"Nome [nome={self.nome}]"
