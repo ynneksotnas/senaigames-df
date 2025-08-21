@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from marketplace.models import Membro
+from marketplace.models import Genero
 
 def index(request):
     #return HttpResponse("<h1> Alô Senai Games!</h1>")
@@ -21,8 +22,9 @@ def autentica_membro(request):
     
     """
     dados = Membro.objects.all()
+    generos = Genero.objects.all()
    
-    return render(request,'marketplace/sou_membro.html',{"cards":dados})
+    return render(request,'marketplace/sou_membro.html',{"cards":dados,"generos":generos})
 
 
 

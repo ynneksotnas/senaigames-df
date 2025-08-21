@@ -26,8 +26,8 @@
          <p>ID do Gênero: {{ chave }} - Nome: {{ valor.nome }}</p>
      
        <select>
-           {% for chave, valor in cards.items %}
-               <option value="{{chave}}">{{valor}}</option>
+           {% for genero in generos %}
+               <option value="{{genero.id}}">{{genero.nome}}</option>
            {% endfor %}          
        </select>
        <button> ENTRAR</button>
