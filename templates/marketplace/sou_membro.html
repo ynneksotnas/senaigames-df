@@ -7,10 +7,16 @@
     <title>Sou Membro</title>
 </head>
 <body>
+
+     <!--DTL (Django Template Engine)--> 
+     {% if cards %}
      <h6>Ùltimos membros cadastros</h6>
      {% for membro in cards %}
-            <p>{{membro.nome}}</p>            
+        <p>{{membro.nome}}</p>            
      {% endfor %}
+     {% else %} 
+        <!--<p>Maravilha! Você será o  primeiro na nossa plataforma! Uau!</p>-->
+     {% endif %}
 
 
     <form action="#" method="POST">
