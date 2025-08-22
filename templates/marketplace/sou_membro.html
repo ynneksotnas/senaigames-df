@@ -1,36 +1,37 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sou Membro</title>
+    {% load static %}
+    <link rel="stylesheet" href='{% static "membro/style.css" %}'>
 </head>
 <body>
-
-     <!--DTL (Django Template Engine)--> 
-     {% if cards %}
-     <h6>Ùltimos membros cadastros</h6>
-     {% for membro in cards %}
-        <p>{{membro.nome}}</p>            
-     {% endfor %}
-     {% else %} 
-        <!--<p>Maravilha! Você será o  primeiro na nossa plataforma! Uau!</p>-->
-     {% endif %}
-
-
     <form action="#" method="POST">
-       email <input type="email" name="usuario">
-       senha <input type="password" name="senha">
-       
-         <p>ID do Gênero: {{ chave }} - Nome: {{ valor.nome }}</p>
-     
-       <select>
-           {% for genero in generos %}
-               <option value="{{genero.id}}">{{genero.nome}}</option>
-           {% endfor %}          
-       </select>
-       <button> ENTRAR</button>
-    </form>    
+        <h2><span>CANDANGO</span> Neural</h2>
+        <h1>Ascentiony</h1>
+        <div>
+            <label for="id_usuario">Email</label>
+            <input type="email" name="usuario" id="id_usuario" placeholder="Digite seu email">
+        </div>
+        <div>
+            <label for="id_senha">Senha</label>
+            <input type="password" name="senha" id="id_senha" placeholder="Digite sua senha">
+        </div>
+        <div class="input-group">
+            <hr>
+            <label for="id_genero">ID do Gênero: {{ chave }} - Nome: {{ valor.nome }}</label>
+        <select>
+            {% for chave, valor in cards.items %}
+            <option name="genero" id="id_genero" value="{{chave}}">{{valor.nome}}</option>
+            {% endfor %}
+        </select>
+        </div>
+        <div class="password-link">
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button type="Submit">ENTRAR</button>
+    </form>
 </body>
 </html>

@@ -91,7 +91,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'candango',
+        'NAME': 'candango_db',
         'USER': 'root',
         'PASSWORD': 'senai@123',
         'HOST': 'localhost',  # Ou o IP do seu servidor MySQL, se não for local
