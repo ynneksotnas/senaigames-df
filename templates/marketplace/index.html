@@ -34,9 +34,9 @@
     <header class="header-logos sticky-top">
         <div class="container d-flex justify-content-center align-items-center gap-4">
             <!-- Placeholder para o logo do Brasília Mais TI -->
-            <img src="{% static 'assets/fotos/brasilia.png' %}" alt="Logo Brasília Mais TI">
+            <img src="{% static 'assets/img/brasilia.png' %}" alt="Logo Brasília Mais TI">
             <!-- Placeholder para o logo do SENAI -->
-            <img src="{% static 'assets/fotos/senai.png' %}" alt="Logo SENAI">
+            <img src="{% static 'assets/img/senai.png' %}" alt="Logo SENAI">
             <a href="{% url 'membro' %}">sou membro</a>
         </div>
     </header>
@@ -167,24 +167,24 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const speakersData = [
-                { img: '{% static "assets/img/ruth.jpeg" %}', name: 'Ruth Marques', title: 'Aluna Python Developer' },
-                { img: '{% static "assets/img/luiz.jpeg" %}', name: 'Luiz F. M. Silva', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/matheus_ribeiro.jpeg" %}', name: 'Matheus Ribeiro', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/joao.jpeg" %}', name: 'João Gabriel', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/henrique.jpeg" %}', name: 'Henrique Monteiro', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/helemeylson.jpeg" %}', name: 'Steve Lins', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/evanilson.jpeg" %}', name: 'Evanilson Braga', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/daniele.jpeg" %}', name: 'Daniele Gomes', title: 'Aluna Python Developer' },
-                { img: '{% static "assets/img/romulo.jpeg" %}', name: 'Rômulo', title: 'Professor Python Developer' },
-                { img: '{% static "assets/img/bruno.jpg" %}', name: 'Bruno Pereira', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/bianca.jpeg" %}', name: 'Bianca Lopes', title: 'Aluna Python Developer' },
-                { img: '{% static "assets/img/kenny.jpg" %}', name: 'Kenny Martins', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/samuel.jpeg" %}', name: 'Samuel', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/arthur.jpeg" %}', name: 'Arthur Santos', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/ana_clara.jpeg" %}', name: 'Ana Clara', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/matheus_sales.jpeg" %}', name: 'Matheus Sales', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/kelvin.jpeg" %}', name: 'Kelvin Vitor', title: 'Aluno Python Developer' },
-                { img: '{% static "assets/img/vinicius.jpeg" %}', name: 'Vinicius dos Santos', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/ruth.jpeg" %}', name: 'Ruth Marques', title: 'Aluna Python Developer' },
+                { img: '{% static "assets/fotos/luiz.jpeg" %}', name: 'Luiz F. M. Silva', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/matheus_ribeiro.jpeg" %}', name: 'Matheus Ribeiro', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/joao.jpeg" %}', name: 'João Gabriel', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/henrique.jpeg" %}', name: 'Henrique Monteiro', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/helemeylson.jpeg" %}', name: 'Steve Lins', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/teste.jpeg" %}', name: 'Evanilson Braga', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/daniele.jpeg" %}', name: 'Daniele Gomes', title: 'Aluna Python Developer' },
+                { img: '{% static "assets/fotos/romulo.jpeg" %}', name: 'Rômulo', title: 'Professor Python Developer' },
+                { img: '{% static "assets/fotos/bruno.jpg" %}', name: 'Bruno Pereira', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/bianca.jpeg" %}', name: 'Bianca Lopes', title: 'Aluna Python Developer' },
+                { img: '{% static "assets/fotos/kenny.jpg" %}', name: 'Kenny Martins', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/samuel.jpeg" %}', name: 'Samuel', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/arthur.jpeg" %}', name: 'Arthur Santos', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/ana_clara.jpeg" %}', name: 'Ana Clara', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/matheus_sales.jpeg" %}', name: 'Matheus Sales', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/kelvin.jpeg" %}', name: 'Kelvin Vitor', title: 'Aluno Python Developer' },
+                { img: '{% static "assets/fotos/vinicius.jpeg" %}', name: 'Vinicius dos Santos', title: 'Aluno Python Developer' },
             ];
 
             const carousel = document.getElementById('speakersCarousel');
