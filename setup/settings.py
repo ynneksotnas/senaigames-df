@@ -41,14 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'marketplace.apps.MarketplaceConfig',
     'crud_base',
   
-=======
-    'crud_base',
-    'marketplace'
->>>>>>> b1aa38ff449458c3b22cf9996c9820a4fbcff282
 ]
 
 MIDDLEWARE = [
@@ -84,7 +79,6 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-<<<<<<< HEAD
 """
 DATABASES = {
     'default': {
@@ -98,20 +92,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'candango_db',
-=======
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'candango',
->>>>>>> b1aa38ff449458c3b22cf9996c9820a4fbcff282
         'USER': 'root',
         'PASSWORD': 'senai@123',
         'HOST': 'localhost',  # Ou o IP do seu servidor MySQL, se não for local
@@ -121,11 +101,7 @@ DATABASES = {
         },
          'test': { # Adicione esta seção para o banco de dados de teste
         'ENGINE': 'django.db.backends.mysql',
-<<<<<<< HEAD
         'NAME': 'candango_db_test',  # <--- MUITO IMPORTANTE: UM NOME DIFERENTE PARA O BANCO DE DADOS DE TESTE
-=======
-        'NAME': 'candango_test',  # <--- MUITO IMPORTANTE: UM NOME DIFERENTE PARA O BANCO DE DADOS DE TESTE
->>>>>>> b1aa38ff449458c3b22cf9996c9820a4fbcff282
         'USER': 'root',
         'PASSWORD': 'senai@123',
         'HOST': 'localhost',
@@ -143,12 +119,9 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
 # conexão de testes - sqlite
 # conexão de produção - mysql
 
-=======
->>>>>>> b1aa38ff449458c3b22cf9996c9820a4fbcff282
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
