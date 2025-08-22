@@ -8,4 +8,3 @@ urlpatterns=[
 ]
 =======
 ]
->>>>>>> b1aa38ff449458c3b22cf9996c9820a4fbcff282
